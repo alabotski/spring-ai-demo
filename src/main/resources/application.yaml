@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-ai-demo
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      base-url: ${AI_OPENAI_BASE_URL:https://openrouter.ai/api}
+      chat:
+        options:
+          model: ${AI_OPENAI_CHAT_OPTIONS_MODEL:x-ai/grok-4-fast}
