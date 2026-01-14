@@ -16,7 +16,8 @@ public class SpringAiService {
   public AiRs sendPrompt(AiRq rq) {
     var answer = chatClientBuilder.build()
         .prompt()
-        .user(rq.getPrompt())
+        .system(rq.getPrompt())
+        .user(rq.getQuestion())
         .call()
         .content();
     return AiRs.builder()

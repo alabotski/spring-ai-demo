@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: optional:file:secret.env[.properties]
   application:
     name: spring-ai-demo
   ai:

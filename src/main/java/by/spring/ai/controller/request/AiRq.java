@@ -6,6 +6,7 @@ import lombok.Value;
 @Value
 public class AiRq {
 
-  @NotNull
   String prompt;
+  @NotNull
+  String question;
 }
